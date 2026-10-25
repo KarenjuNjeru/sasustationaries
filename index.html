@@ -194,7 +194,7 @@ footer a{text-decoration:none;font-weight:600}footer a:hover{text-decoration:und
 </defs></svg>
 
 <div class="nav"><div class="wrap nav-in">
-  <a class="brand" href="#/"><span class="logo"></span>Sasu Stationaries</a>
+  <a class="brand" href="#/"><span class="logo"></span>Kingdom Quills</a>
   <nav class="links" aria-label="Main"><a href="#/" id="n-home">Home</a><a href="#/shop" id="n-shop">Shop</a><a id="n-wa" href="#" target="_blank" rel="noopener">WhatsApp us</a></nav>
   <form class="nsearch" id="nsearch" role="search"><label class="sr" for="nq">Search products</label><input id="nq" placeholder="Search notebooks, pens, paper" autocomplete="off"></form>
   <button class="bag" data-a="open-cart" aria-label="Open basket">Basket <i id="count">0</i></button>
@@ -210,7 +210,7 @@ footer a{text-decoration:none;font-weight:600}footer a:hover{text-decoration:und
 
 <script>
 /* ===== settings: change these ===== */
-const CONFIG = { name: 'Sasu Stationaries', currency: 'KSh', pin: '2026', whatsapp: '254700000000', countryCode: '254' };
+const CONFIG = { name: 'Kingdom Quills', currency: 'KSh', pin: '2026', whatsapp: '254700000000', countryCode: '254' };
 
 /* ===== data (kept in this browser's local storage) ===== */
 const SEED = [
@@ -389,7 +389,7 @@ function render(keep) {
   $('#n-home').classList.toggle('on', !a); $('#n-shop').classList.toggle('on', a === 'shop');
   $('#count').textContent = cart.reduce((n, l) => n + l.qty, 0);
   drawCart();
-  document.title = a === 'product' && prod(b) ? prod(b).name + ' | Sasu Stationaries' : 'Sasu Stationaries | Notebooks, pens, paper and office supplies';
+  document.title = a === 'product' && prod(b) ? prod(b).name + ' | Kingdom Quills' : 'Kingdom Quills | Notebooks, pens, paper and office supplies';
   keep ? scrollTo(0, y) : scrollTo(0, 0);
 }
 function drawCart() {
@@ -495,7 +495,7 @@ render();
     const i192 = draw(192), i512 = draw(512);
     [['icon', i192], ['apple-touch-icon', i192]].forEach(([rel, href]) => { const l = document.createElement('link'); l.rel = rel; l.href = href; document.head.appendChild(l); });
     const m = document.createElement('link'); m.rel = 'manifest';
-    m.href = URL.createObjectURL(new Blob([JSON.stringify({ name: 'Sasu Stationaries', short_name: 'Sasu', start_url: location.origin + location.pathname, scope: location.origin + '/', display: 'standalone', background_color: '#FFFFFF', theme_color: '#17245F',
+    m.href = URL.createObjectURL(new Blob([JSON.stringify({ name: 'Kingdom Quills', short_name: 'Sasu', start_url: location.origin + location.pathname, scope: location.origin + '/', display: 'standalone', background_color: '#FFFFFF', theme_color: '#17245F',
       icons: [{ src: i192, sizes: '192x192', type: 'image/png' }, { src: i512, sizes: '512x512', type: 'image/png' }] })], { type: 'application/manifest+json' }));
     document.head.appendChild(m);
   } catch {}
