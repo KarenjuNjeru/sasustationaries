@@ -301,7 +301,7 @@ if (LOGO_BASE64 && LOGO_BASE64 !== "PASTE_YOUR_BASE64_HERE") {
 <script>
 /* ===== settings ===== */
 const CONFIG = { name: 'Kingdom Quills', currency: 'KSh', whatsapp: '254795689004', countryCode: '254',
-  apiBase: '' /* '' when Spring serves this page, otherwise 'https://xxxx.ngrok-free.app' */ };
+  apiBase: 'https://fpo.ngrok.dev' /* '' when Spring serves this page, otherwise 'https://xxxx.ngrok-free.app' */ };
 
 /* ===== storage helpers (only the basket is kept in the browser) ===== */
 const ld = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch { return d; } };
